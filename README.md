@@ -10,5 +10,5 @@ It tracks how many rolls until you go broke, highest amount of money that you wo
 
 Screenshot Image:
 
-(LuckySevens/images/Screen Shot 2019-10-21 at 12.20.05 PM.png)
+![Alt text] (/../master/images/Screen Shot 2019-10-21 at 12.20.05 PM.png?raw=true "Screenshot"
 
