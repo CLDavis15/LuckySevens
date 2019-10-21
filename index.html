@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lucky Sevens</title>
+
+
+
+    <style>
+            .center {
+              text-align: center;
+            }
+            table.center {
+              text-align: left;
+              margin-right: auto;
+              margin-left: auto;
+            }
+            table {
+              border: 2px solid black;
+              border-collapse: collapse;
+            }
+            thead tr {
+              background-color: #c3c3d5; 
+            }
+            tbody tr:nth-child(odd) {
+              background-color: #e1e1ea;
+            }
+            th, td {
+              border: 1px solid black;
+              padding: 5px;
+            }
+            hr {
+              width: 50%;
+            }
+            button {
+              margin: 10px 5px;
+              padding: 10px 50px;
+              font-size: 1.2em;
+              border-radius: 45px;
+              border: 1px solid blue;
+            }
+            button:hover {
+              background-color: lightgreen;
+              font-weight: bold;
+            }
+            input {
+              text-align: right;
+              font-size: 16px;
+            }
+            label {
+              margin-right: 20px;
+              font-size: 18px;
+            }
+            .error {
+              background-color: red;
+            }
+          </style>
+      
+          <script type="text/javascript" src="luckySevens.js"></script>
+        </head>
+      
+        <body class="center">
+      
+          <h1>Lucky Sevens</h1>
+          <label for="bet" style="margin-right: 10px;">Starting Bet:</label>
+          $<input id="bet" type="number" value="0.00" step=".01" min="0">
+          <br>
+          <button id="play" type="submit" name="play" onclick="verify();">Play</button>
+      
+          <hr />
+      
+          <div id="results" style="display: none;">
+              <h1>Results</h1>
+              <table class="center">
+                <thead>
+                  <tr>
+                    <td>Starting Bet</td>
+                    <td>$<span id="resultBet"></span></td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Total Rolls Before Going Broke</td>
+                    <td><span id="resultBeforeBroke"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Highest amount won</td>
+                    <td>$<span id="resultMaxMoney"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Roll count at highest amount won</td>
+                    <td><span id="resultRollAtMax"></span></td>
+                  </tr>
+                </tbody>
+              </table>
+              <button id="reset" type="submit" onclick="reset();">Reset</button>
+      
+          </div>
+      
+        </body>
+      </html>
