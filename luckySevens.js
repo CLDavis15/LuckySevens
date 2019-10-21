@@ -3,7 +3,7 @@
       var money = bet;
       var maxMoney = money;
       var rolls = 0;
-      var rollAtMax = 0;
+      var rollMax = 0;
       
       
       while (money > 0) {
@@ -20,7 +20,7 @@
             
             if (money > maxMoney) {
                 maxMoney = money;
-                rollAtMax = rolls;
+                rollMax = rolls;
             }
             
            
@@ -29,7 +29,7 @@
         document.getElementById('resultBet').innerText = bet;
         document.getElementById('resultBeforeBroke').innerText = rolls;
         document.getElementById('resultMaxMoney').innerText = maxMoney;
-        document.getElementById('resultRollAtMax').innerText = rollAtMax;
+        document.getElementById('resultRollAtMax').innerText = rollMax;
         document.getElementById("results").style.display="block";
         document.getElementById("play").innerText="Play Again";
     }
