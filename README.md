@@ -10,5 +10,5 @@ It tracks how many rolls until you go broke, highest amount of money that you wo
 
 Screenshot Image:
 
-![Alt text] (/../master/images/screenshot.png?raw=true "Screenshot"
+![Alt text] (/relative/path/to/screenshot.png?raw=true "Screenshot"
 
