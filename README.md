@@ -10,4 +10,4 @@ It tracks how many rolls until you go broke, highest amount of money that you wo
 
 Screenshot Image:
 
-![image] (http://github/LuckySevens/images/screenshot.png)
+![]()
