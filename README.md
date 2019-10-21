@@ -8,7 +8,3 @@ The game uses two 6 sided dice to roll. If they equal 7 then you win $4 if not y
 
 It tracks how many rolls until you go broke, highest amount of money that you won, and the roll count at which you one the most money.
 
-Screenshot Image:
-
-![Alt text] (/relative/path/to/screenshot.png?raw=true "Screenshot"
-
